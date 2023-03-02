@@ -3,7 +3,7 @@ import bpy
 scene = bpy.context.scene
 
 def pop(obj, start, rate, scene):
-    obj.data.body = 'Population - +' + str(int(round((start)+rate*scene.frame_current/bpy.context.scene.render.fps,0))) + '%'
+    obj.data.body = "Population Growth \n" + str(int(round((start)+rate*scene.frame_current/bpy.context.scene.render.fps,0))) + '%'
 
 def yr(obj, start, rate, scene):
     obj.data.body = '' + str(int(round((start)+rate*scene.frame_current/bpy.context.scene.render.fps,0))) + ''
